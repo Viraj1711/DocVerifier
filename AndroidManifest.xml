@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/docverifier_logo"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DocVerifier"
+        tools:targetApi="31">
+        <activity
+            android:name=".Admin.AddCertificateMarksActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.CheckNotaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.SendNotaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.GenerateNotaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.NotaryRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.UpdateProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.ReviewImageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Verifier.CheckDocuments"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AddCertificateAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".User.VerifyCertificateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".User.RequiredDocumentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegister.UserRegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegister.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Verifier.VerifierDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.AdminDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegister.StartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginRegister.SplashScreenActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".User.MainActivity"
+            android:exported="true" />
+    </application>
+
+</manifest>
